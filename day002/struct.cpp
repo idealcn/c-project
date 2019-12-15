@@ -31,5 +31,15 @@ int main(){
 	john.name = "john";
 	john.age = 11;
 	
+	
+	//共用体
+	one4all all;
+	all.int_val = 10;
+	cout << "共用体 ： " <<  all.int_val <<endl;
+	
+	//枚举
+	Week week;
+	week = Sunday;
+	
 	return 0;
 }
