@@ -1,0 +1,1 @@
+G:/Cygwin/bin/gcc.exe -g  -Wl,--enable-auto-import CMakeFiles/day001.dir/main.c.o CMakeFiles/day001.dir/my_struct.c.o CMakeFiles/day001.dir/my_enum.c.o  -o day001.exe -Wl,--out-implib,libday001.dll.a -Wl,--major-image-version,0,--minor-image-version,0 

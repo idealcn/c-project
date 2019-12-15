@@ -1,0 +1,6 @@
+//notepad自动运行c++程序命令
+https://www.jianshu.com/p/0ac12066fdd8
+//快捷键
+https://www.cnblogs.com/webSong/p/6262608.html
+//配置c++编译环境
+https://www.cnblogs.com/beyond-time-space/p/3538529.html

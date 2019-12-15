@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/cygdrive/g/workspace/c-project/day001/main.c
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+ctype.h
+-
+my_error.h
+/cygdrive/g/workspace/c-project/day001/my_error.h
+my_struct.h
+/cygdrive/g/workspace/c-project/day001/my_struct.h
+my_enum.h
+/cygdrive/g/workspace/c-project/day001/my_enum.h
+
+/cygdrive/g/workspace/c-project/day001/my_enum.h
+
+/cygdrive/g/workspace/c-project/day001/my_error.h
+
+/cygdrive/g/workspace/c-project/day001/my_struct.h
+
