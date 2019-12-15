@@ -43,6 +43,39 @@ int main() {
 	
 	
 	//使用new创建动态数组
+	int size = 10;
+	int* parr = new int[size];
 	
+	for (int i = 0 ; i < size ; i++){
+		//把指针当做数组名来使用
+		parr[i] = i;
+	}
+	
+	cout << "parr[5] => " << parr[5] << endl;
+	
+	//指针的算术运算,可加减，不可乘除
+	//将指针变量加1后，增加的量等于它指向的类型的字节数。例如：将指向double的指针加1后，如果系统对double使用8个字节存储，则数值将增加8；
+	//将指向short的指针加1后，如果系统对short使用2个字节存储，则指针值将增加2。
+	//c++将数组名解释为地址。
+	cout << "指向第1个元素 => " << *parr <<endl;
+	cout << "指向第3个元素 => " << *(parr+2) <<endl;
+	//释放数组指针
+	delete [] parr;
+	
+	//c++将数组名解释为第一个元素的地址，对数组名应用地址运算符得到的是整个数组的地址。虽然这两个地址从数字上来看相同。
+	long dl[10] = {};
+	cout<< "&dl => " << dl << ",&dl[0] => " << &dl[0] << endl; 
+	//对数组名取地址得到的是整个数组的地址
+	cout << "&dl => " << &dl <<endl;
+	//dl作为数组名
+	cout << "&dl[1] => " << &dl[1]  << endl;
+	//dl作为指针
+	cout << " &(dl+1) => " << dl+1 << endl; 
+	//求数组长度,sizeof(数组名)返回数组的字节总长度
+	//sizeof(数据类型)返回该类型占用的字节长度
+	cout << "dl length => " << sizeof(dl) / sizeof(long)<< endl;
+	
+	//释放数组
+	delete [] dl;
 	return 0;
 }
