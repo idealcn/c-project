@@ -76,6 +76,6 @@ int main() {
 	cout << "dl length => " << sizeof(dl) / sizeof(long)<< endl;
 	
 	//释放数组
-	delete [] dl;
+//	delete &dl;
 	return 0;
 }
