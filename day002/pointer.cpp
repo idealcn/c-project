@@ -75,7 +75,7 @@ int main() {
 	//sizeof(数据类型)返回该类型占用的字节长度
 	cout << "dl length => " << sizeof(dl) / sizeof(long)<< endl;
 	
-	//释放数组
+	//释放数组，dl不是通过new(动态联编)运算符创建的，不能用delete删除。
 //	delete &dl;
 	return 0;
 }
